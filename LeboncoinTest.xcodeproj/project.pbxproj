@@ -15,6 +15,14 @@
 		2305020A267A0BDB00CD24E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23050208267A0BDB00CD24E8 /* LaunchScreen.storyboard */; };
 		23050215267A0BDB00CD24E8 /* LeboncoinTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23050214267A0BDB00CD24E8 /* LeboncoinTestTests.swift */; };
 		23050220267A0BDB00CD24E8 /* LeboncoinTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305021F267A0BDB00CD24E8 /* LeboncoinTestUITests.swift */; };
+		2305022F267A0C0500CD24E8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305022E267A0C0500CD24E8 /* NetworkManager.swift */; };
+		232FF2C3267BC74F008B7718 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FF2C2267BC74F008B7718 /* Product.swift */; };
+		2374BCE1267CF7E60002C9F9 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374BCE0267CF7E60002C9F9 /* ImageUrl.swift */; };
+		2374BCE3267D369A0002C9F9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374BCE2267D369A0002C9F9 /* Category.swift */; };
+		2374BCE6267D39B50002C9F9 /* StringOrDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374BCE5267D39B50002C9F9 /* StringOrDouble.swift */; };
+		2374BCE8267D3A500002C9F9 /* DictionaryDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374BCE7267D3A500002C9F9 /* DictionaryDecode.swift */; };
+		23BE5564267A34B600079DD9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE5563267A34B600079DD9 /* Constants.swift */; };
+		23BE5568267A34EA00079DD9 /* ImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE5567267A34EA00079DD9 /* ImageView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,15 @@
 		2305021B267A0BDB00CD24E8 /* LeboncoinTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeboncoinTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2305021F267A0BDB00CD24E8 /* LeboncoinTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinTestUITests.swift; sourceTree = "<group>"; };
 		23050221267A0BDB00CD24E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2305022E267A0C0500CD24E8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		232FF2C2267BC74F008B7718 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2374BCE0267CF7E60002C9F9 /* ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
+		2374BCE2267D369A0002C9F9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2374BCE5267D39B50002C9F9 /* StringOrDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringOrDouble.swift; sourceTree = "<group>"; };
+		2374BCE7267D3A500002C9F9 /* DictionaryDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDecode.swift; sourceTree = "<group>"; };
+		23BE5563267A34B600079DD9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23BE5567267A34EA00079DD9 /* ImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+extension.swift"; sourceTree = "<group>"; };
+		23C224F6267B4F41006CC113 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +100,7 @@
 				23050213267A0BDB00CD24E8 /* LeboncoinTestTests */,
 				2305021E267A0BDB00CD24E8 /* LeboncoinTestUITests */,
 				230501FB267A0BD900CD24E8 /* Products */,
+				8109098015134DA9D0903C24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +117,11 @@
 		230501FC267A0BD900CD24E8 /* LeboncoinTest */ = {
 			isa = PBXGroup;
 			children = (
-				230501FD267A0BD900CD24E8 /* AppDelegate.swift */,
-				230501FF267A0BD900CD24E8 /* SceneDelegate.swift */,
-				23050201267A0BD900CD24E8 /* ViewController.swift */,
-				23050203267A0BD900CD24E8 /* Main.storyboard */,
-				23050206267A0BDB00CD24E8 /* Assets.xcassets */,
-				23050208267A0BDB00CD24E8 /* LaunchScreen.storyboard */,
-				2305020B267A0BDB00CD24E8 /* Info.plist */,
+				23BE556A267A443400079DD9 /* Model */,
+				23BE5569267A36D500079DD9 /* Supporting Files */,
+				23BE5566267A34DA00079DD9 /* Extensions */,
+				23BE5562267A34A800079DD9 /* Utils */,
+				2305022D267A0BE600CD24E8 /* Manager */,
 			);
 			path = LeboncoinTest;
 			sourceTree = "<group>";
@@ -126,6 +142,64 @@
 				23050221267A0BDB00CD24E8 /* Info.plist */,
 			);
 			path = LeboncoinTestUITests;
+			sourceTree = "<group>";
+		};
+		2305022D267A0BE600CD24E8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2305022E267A0C0500CD24E8 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		23BE5562267A34A800079DD9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				23BE5563267A34B600079DD9 /* Constants.swift */,
+				2374BCE5267D39B50002C9F9 /* StringOrDouble.swift */,
+				2374BCE7267D3A500002C9F9 /* DictionaryDecode.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		23BE5566267A34DA00079DD9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23BE5567267A34EA00079DD9 /* ImageView+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23BE5569267A36D500079DD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				230501FD267A0BD900CD24E8 /* AppDelegate.swift */,
+				230501FF267A0BD900CD24E8 /* SceneDelegate.swift */,
+				23050201267A0BD900CD24E8 /* ViewController.swift */,
+				23050203267A0BD900CD24E8 /* Main.storyboard */,
+				23050206267A0BDB00CD24E8 /* Assets.xcassets */,
+				23050208267A0BDB00CD24E8 /* LaunchScreen.storyboard */,
+				2305020B267A0BDB00CD24E8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23BE556A267A443400079DD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2374BCE2267D369A0002C9F9 /* Category.swift */,
+				232FF2C2267BC74F008B7718 /* Product.swift */,
+				2374BCE0267CF7E60002C9F9 /* ImageUrl.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8109098015134DA9D0903C24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C224F6267B4F41006CC113 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +332,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BE5564267A34B600079DD9 /* Constants.swift in Sources */,
+				2374BCE3267D369A0002C9F9 /* Category.swift in Sources */,
+				2305022F267A0C0500CD24E8 /* NetworkManager.swift in Sources */,
+				2374BCE8267D3A500002C9F9 /* DictionaryDecode.swift in Sources */,
 				23050202267A0BD900CD24E8 /* ViewController.swift in Sources */,
 				230501FE267A0BD900CD24E8 /* AppDelegate.swift in Sources */,
+				23BE5568267A34EA00079DD9 /* ImageView+extension.swift in Sources */,
 				23050200267A0BD900CD24E8 /* SceneDelegate.swift in Sources */,
+				2374BCE1267CF7E60002C9F9 /* ImageUrl.swift in Sources */,
+				2374BCE6267D39B50002C9F9 /* StringOrDouble.swift in Sources */,
+				232FF2C3267BC74F008B7718 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LeboncoinTest/Info.plist;
+				INFOPLIST_FILE = "./LeboncoinTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LeboncoinTest/Info.plist;
+				INFOPLIST_FILE = "./LeboncoinTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
