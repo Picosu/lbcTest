@@ -37,7 +37,6 @@ class ProductsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         NetworkManager.retrieveDataFromApi { products in
-            print(products)
             self.products = products
         }
 
@@ -69,10 +68,12 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: productCellReuseIdentifier)
+        let cell = UITableViewCell(style: .default, reuseIdentifier: productCellReuseIdentifier) //ProductCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: productCellReuseIdentifier)
         
-        cell.textLabel?.text = products[indexPath.row].title
-        cell.detailTextLabel?.text = "\(products[indexPath.row].price) €"
+        let currentProduct = products[indexPath.row]
+//        cell.product = products[indexPath.row]
+        cell.textLabel?.text = currentProduct.title
+        cell.detailTextLabel?.text = String(describing: currentProduct.price)
         
         return cell
     }

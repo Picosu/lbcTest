@@ -16,7 +16,8 @@ class NetworkManager: NSObject {
     static let shared = NetworkManager()
 
     var configuration = Configuration()
-    class func retrieveDataFromUrl(fromUrl url:URL, callBack: @escaping (UIImage) -> ()) {
+    
+    class func retrieveImageFromUrl(fromUrl url:URL, callBack: @escaping (UIImage) -> ()) {
         
         let req = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: req) { (data, response, error) in
