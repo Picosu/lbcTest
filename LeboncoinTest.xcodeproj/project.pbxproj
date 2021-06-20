@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		230501FE267A0BD900CD24E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230501FD267A0BD900CD24E8 /* AppDelegate.swift */; };
 		23050200267A0BD900CD24E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230501FF267A0BD900CD24E8 /* SceneDelegate.swift */; };
-		23050202267A0BD900CD24E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23050201267A0BD900CD24E8 /* ViewController.swift */; };
+		23050202267A0BD900CD24E8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23050201267A0BD900CD24E8 /* ProductsViewController.swift */; };
 		23050205267A0BD900CD24E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23050203267A0BD900CD24E8 /* Main.storyboard */; };
 		23050207267A0BDB00CD24E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23050206267A0BDB00CD24E8 /* Assets.xcassets */; };
 		2305020A267A0BDB00CD24E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23050208267A0BDB00CD24E8 /* LaunchScreen.storyboard */; };
@@ -23,6 +23,7 @@
 		2374BCE8267D3A500002C9F9 /* DictionaryDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374BCE7267D3A500002C9F9 /* DictionaryDecode.swift */; };
 		23BE5564267A34B600079DD9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE5563267A34B600079DD9 /* Constants.swift */; };
 		23BE5568267A34EA00079DD9 /* ImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE5567267A34EA00079DD9 /* ImageView+extension.swift */; };
+		23DEA4CD267F8C3D00B6D906 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEA4CC267F8C3D00B6D906 /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,7 @@
 		230501FA267A0BD900CD24E8 /* LeboncoinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		230501FD267A0BD900CD24E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		230501FF267A0BD900CD24E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23050201267A0BD900CD24E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23050201267A0BD900CD24E8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		23050204267A0BD900CD24E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23050206267A0BDB00CD24E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23050209267A0BDB00CD24E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		23BE5563267A34B600079DD9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23BE5567267A34EA00079DD9 /* ImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+extension.swift"; sourceTree = "<group>"; };
 		23C224F6267B4F41006CC113 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DEA4CC267F8C3D00B6D906 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,8 @@
 		230501FC267A0BD900CD24E8 /* LeboncoinTest */ = {
 			isa = PBXGroup;
 			children = (
+				23DEA4CB267F8C0C00B6D906 /* Views */,
+				23135C8C267E973D0069D519 /* Controller */,
 				23BE556A267A443400079DD9 /* Model */,
 				23BE5569267A36D500079DD9 /* Supporting Files */,
 				23BE5566267A34DA00079DD9 /* Extensions */,
@@ -152,6 +156,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		23135C8C267E973D0069D519 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23050201267A0BD900CD24E8 /* ProductsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		23BE5562267A34A800079DD9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +187,6 @@
 			children = (
 				230501FD267A0BD900CD24E8 /* AppDelegate.swift */,
 				230501FF267A0BD900CD24E8 /* SceneDelegate.swift */,
-				23050201267A0BD900CD24E8 /* ViewController.swift */,
 				23050203267A0BD900CD24E8 /* Main.storyboard */,
 				23050206267A0BDB00CD24E8 /* Assets.xcassets */,
 				23050208267A0BDB00CD24E8 /* LaunchScreen.storyboard */,
@@ -192,6 +203,14 @@
 				2374BCE0267CF7E60002C9F9 /* ImageUrl.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		23DEA4CB267F8C0C00B6D906 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23DEA4CC267F8C3D00B6D906 /* ProductCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8109098015134DA9D0903C24 /* Frameworks */ = {
@@ -336,11 +355,12 @@
 				2374BCE3267D369A0002C9F9 /* Category.swift in Sources */,
 				2305022F267A0C0500CD24E8 /* NetworkManager.swift in Sources */,
 				2374BCE8267D3A500002C9F9 /* DictionaryDecode.swift in Sources */,
-				23050202267A0BD900CD24E8 /* ViewController.swift in Sources */,
+				23050202267A0BD900CD24E8 /* ProductsViewController.swift in Sources */,
 				230501FE267A0BD900CD24E8 /* AppDelegate.swift in Sources */,
 				23BE5568267A34EA00079DD9 /* ImageView+extension.swift in Sources */,
 				23050200267A0BD900CD24E8 /* SceneDelegate.swift in Sources */,
 				2374BCE1267CF7E60002C9F9 /* ImageUrl.swift in Sources */,
+				23DEA4CD267F8C3D00B6D906 /* ProductCell.swift in Sources */,
 				2374BCE6267D39B50002C9F9 /* StringOrDouble.swift in Sources */,
 				232FF2C3267BC74F008B7718 /* Product.swift in Sources */,
 			);

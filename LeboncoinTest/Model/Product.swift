@@ -11,6 +11,7 @@ struct Product: Decodable {
 
     let id: Int
     let title: String
+    let description: String
     let categoryId: Int
     let price: StringOrDouble
     let creationDate: String
@@ -20,6 +21,7 @@ struct Product: Decodable {
   enum CodingKeys: String, CodingKey {
     case id
     case title
+    case description
     case categoryId = "category_id"
     case price
     case creationDate = "creation_date"
